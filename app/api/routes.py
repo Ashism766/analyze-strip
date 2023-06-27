@@ -15,6 +15,8 @@ router = APIRouter()
 async def analyze_image(request: Request,file: UploadFile = File(...)):
     
     try:
+        os.makedirs("./temp", exist_ok=True)
+
         file_path = f"./temp/{file.filename}"
         with open(file_path, "wb") as buffer:
             buffer.write(await file.read())
@@ -27,6 +29,7 @@ async def analyze_image(request: Request,file: UploadFile = File(...)):
         return templates.TemplateResponse("result.html", {"request": request, "result": result_json})
 
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail="Internal Server Error") from e
 
 

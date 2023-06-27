@@ -2,19 +2,23 @@
 <html>
 <head>
     <title>Result</title>
+    <link href="/static/css/upload_photo.css" rel="stylesheet">
 </head>
 <body>
     <h1>Result</h1>
-    <p>URO: {{ result.URO }}</p>
-    <p>BIL: {{ result.BIL }}</p>
-    <p>KET: {{result.KET}}</p>
-    <p>BLD: {{result.BLD}}</p>
-     <p>PRO: {{result.PRO}}</p>
-     <p>NIT: {{result.NIT}}</p>
-     <p>LEU: {{result.LEU}}</p>
-     <p>GLU: {{result.GLU}}</p>
-     <p>SG: {{result.SG}}</p>
-     <p>PH: {{result.PH}}</p>
 
+
+    <div class="container">
+    <div class="item">URO: {{ result.URO }}</div>
+    <div class="item">BIL: {{ result.BIL }}</div>
+    <div class="item">KET: {{result.KET}}</div>
+    <div class="item">BLD: {{result.BLD}}</div>
+     <div class="item">PRO: {{result.PRO}}</div>
+     <div class="item">NIT: {{result.NIT}}</div>
+     <div class="item">LEU: {{result.LEU}}</div>
+     <div class="item">GLU: {{result.GLU}}</div>
+     <div class="item">SG: {{result.SG}}</div>
+     <div class="item">PH: {{result.PH}}</div>
+   </div>
 </body>
 </html>

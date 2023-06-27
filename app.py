@@ -1,16 +1,13 @@
-import cv2
-import json
-from fastapi import FastAPI, UploadFile, File
-import os
+from fastapi import FastAPI
 import uvicorn
 from fastapi.staticfiles import StaticFiles
 
-from app.routes import upload_photo
+from app.api import routes
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-app.include_router(upload_photo.router)
+app.include_router(routes.router)
 
 
 if __name__ == "__main__":

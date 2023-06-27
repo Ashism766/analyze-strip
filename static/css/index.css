@@ -42,3 +42,8 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
 }
+div {
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+}

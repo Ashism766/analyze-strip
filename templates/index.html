@@ -6,6 +6,9 @@
 </head>
 <body>
     <h1>GET URINE STRIP COLOR RGB VALUE</h1>
+    <div>In this app, you need to upload an image of urine strip, which should contain 10 colors.<br/> after clicking on "Get Result" button you will get the 
+        RGB value of that strip.
+    </div>
     <form action="/analyze" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*" required>
         <button type="submit">Get Result</button>

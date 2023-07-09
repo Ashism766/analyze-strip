@@ -1,4 +1,4 @@
-## Analyze Strip
+## Analyze Strip [live](https://strip-analysis-modified.onrender.com/)
 It's an Appilication which analyze [urine strip](https://en.wikipedia.org/wiki/Urine_test_strip) and show the RGB value of them in frontend.
 
 After going to homepage you can upload your urine strip photo in jpeg, png format, later on click submit it'll show the RGB value of this strip.
